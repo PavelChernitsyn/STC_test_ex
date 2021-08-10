@@ -77,7 +77,7 @@ long get_next(std::deque<uint> deque)
                 if ((deque.at(0) * a + c1) % m == deque.at(1) &&
                     (deque.at(1) * a + c1) % m == deque.at(2) &&
                     (deque.at(2) * a + c1) % m == deque.at(3)/* && (13214 * a + c1) % m == 16605*/)
-                    std::cout << ">>>" << inv_diff0;
+                    // std::cout << ">>>" << inv_diff0;
                     return (deque.back() * a + c1) % m;
             }
         }
@@ -102,7 +102,7 @@ int main()
         else
             std::cout << res;
         std::cout << ";\tExpected: " << r.next() << std::endl;
-        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        std::this_thread::sleep_for(std::chrono::milliseconds(700));
     }
 
     return 0;
